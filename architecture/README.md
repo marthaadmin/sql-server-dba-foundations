@@ -18,3 +18,8 @@ The lab simulates a real enterprise environment with:
 
 ### SQL Server Connectivity (SSMS)
 ![SSMS SQL01 Connection](screenshots/ssms-sql01-connection.png)
+### SSMS Connection Validation
+![SSMS Connection](ssms-sql01-connection.png)
+
+### SQL Server Configuration Manager
+![SQL Server Configuration Manager](sql-server-configuration-manager.png)
