@@ -6,6 +6,7 @@ The lab simulates a real enterprise environment with:
 - A Domain Controller
 - Multiple SQL Server nodes
 - Centralized authentication using Active Directory
+- patching
 ## Architecture Screenshots
 
 ## Architecture Screenshots
@@ -23,3 +24,13 @@ The lab simulates a real enterprise environment with:
 
 ### SQL Server Configuration Manager
 ![SQL Server Configuration Manager](sql-server-configuration-manager.png)
+## Screenshots
+
+- SQL Server services running  
+  ![SQL Services](sql_services_running.png)
+
+- TCP/IP and port configuration  
+  ![TCP/IP](tcp_ip_port_configuration.png)
+
+- SQL Server version and build check  
+  ![SQL Version](sql_version_check.png)
