@@ -11,7 +11,7 @@ The lab simulates a real enterprise environment with:
 ## Architecture Screenshots
 
 ### GCP VM Infrastructure
-![GCP VM Infrastructure](gcp-vm-instances.png)
+![GCP VM Infrastructure](gcp-vm-infrastructure.png)
 
 ### Active Directory
 ![Active Directory](active-directory-users.png)
