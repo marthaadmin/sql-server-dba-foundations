@@ -14,7 +14,7 @@ The lab simulates a real enterprise environment with:
 ![GCP VM Infrastructure](gcp-vm-infrastructure.png)
 
 ### Active Directory
-![Active Directory](active-directory-users.png)
+![Active Directory](architecture/screenshots/active-directory-users.png)
 
 ### SQL Server Connectivity (SSMS)
 ![SSMS SQL01 Connection](ssms-sql01-connection.png)
