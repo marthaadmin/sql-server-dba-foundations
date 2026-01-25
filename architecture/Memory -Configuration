@@ -1,1 +1,61 @@
+# SQL Server Memory Configuration (DBA Best Practice)
+
+## Objective
+Configure SQL Server memory to balance performance and system stability.
+
+---
+
+## Why Memory Configuration Matters
+By default, SQL Server can consume all available system memory.
+If not controlled, this can starve the operating system and cause instability.
+
+As a DBA, it is best practice to configure both:
+- Maximum server memory
+- Minimum server memory
+
+---
+
+## Memory Configuration Steps (SSMS)
+
+1. Open SQL Server Management Studio (SSMS)
+2. Connect to the SQL Server instance
+3. Right-click the server name → Properties
+4. Select **Memory**
+5. Configure:
+   - Max Server Memory = 80% of total system memory
+   - Min Server Memory = ~30% of total system memory
+6. Click OK
+
+---
+
+## Lab Example
+
+Server Memory: 8 GB (8188 MB)
+
+- Max Server Memory: 6550MB
+- Min Server Memory: 2456MB
+
+---
+
+## Misconfiguration Scenarios
+
+### No Max Memory Set
+- SQL Server consumes all memory
+- OS becomes unstable
+- RDP and SSMS become slow
+
+### Max Memory Too Low
+- Poor query performance
+- High CPU usage
+- Constant cache eviction
+
+### No Min Memory Set
+- Memory grows and shrinks aggressively
+- Unstable performance
+
+---
+
+## DBA Takeaway
+Proper memory configuration is a foundational DBA responsibility.
+Memory issues often appear as query or application problems but originate at the server level.
 
