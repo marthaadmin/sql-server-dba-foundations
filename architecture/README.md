@@ -34,3 +34,5 @@ The lab simulates a real enterprise environment with:
 
 - SQL Server version and build check  
   ![SQL Version](sql_version_check.png)
+SQL Server memory configuration (min/max memory)  
+  ![SQL Server Memory](../05-memory-configuration/server-properties-memory.png)
