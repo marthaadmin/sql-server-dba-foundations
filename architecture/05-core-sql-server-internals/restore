@@ -1,0 +1,28 @@
+# SQL Server Restore Operations
+
+## Objective
+Safely recover databases after failure or data loss.
+
+## Restore States
+
+- WITH RECOVERY → Database online
+- WITH NORECOVERY → Database waiting for more restores
+- WITH STANDBY → Read-only access
+
+## Typical Restore Sequence (Full Recovery)
+
+1. Restore full backup (NORECOVERY)
+2. Restore differential (optional)
+3. Restore log backups in order
+4. Restore tail-log
+5. WITH RECOVERY
+
+## Common DBA Mistakes
+❌ Restoring log backups out of order  
+❌ Forgetting NORECOVERY  
+❌ Skipping tail-log backup  
+❌ Restoring directly over production
+
+## DBA Truth
+Backups save data.  
+Restores save careers.
