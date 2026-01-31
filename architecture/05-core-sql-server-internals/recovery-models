@@ -1,0 +1,29 @@
+# SQL Server Recovery Models
+
+## Objective
+Understand how recovery models control data protection and restore options.
+
+## Recovery Models
+
+### Full Recovery
+- All transactions logged
+- Supports point-in-time restore
+- Requires log backups
+- Used in production
+
+### Bulk-Logged Recovery
+- Minimally logs bulk operations
+- Used during large data loads
+- Limited point-in-time recovery
+
+### Simple Recovery
+- Log truncates automatically
+- No log backups
+- Limited restore options
+- Used in dev/test
+
+## Common DBA Mistake
+Running Full recovery without log backups leads to log file growth and outages.
+
+## DBA Rule
+Recovery model must match business recovery requirements.
