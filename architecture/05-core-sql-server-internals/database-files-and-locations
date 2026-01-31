@@ -1,0 +1,34 @@
+# SQL Server Database Files and Locations
+
+## Objective
+Understand how SQL Server databases are stored physically on disk.
+
+## File Types Explained
+
+### .mdf (Primary Data File)
+- Core database data
+- Metadata, tables, indexes
+- One per database (required)
+
+### .ndf (Secondary Data Files)
+- Optional
+- Used for large databases
+- Improves performance and manageability
+
+### .ldf (Transaction Log File)
+- Records all database transactions
+- Critical for recovery
+- Required for point-in-time restores
+
+## Why .ldf Is Critical
+The transaction log is like CCTV footage.
+Without it, SQL Server cannot replay or recover transactions.
+
+## Best Practices
+- Separate data and log files
+- Never delete .mdf or .ldf manually
+- Avoid frequent shrinking
+
+## DBA Mindset
+Logical databases live in SSMS.  
+Physical databases live on disk.
