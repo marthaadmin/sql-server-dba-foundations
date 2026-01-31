@@ -1,0 +1,44 @@
+# SQL Server System Databases
+
+## Objective
+Understand SQL Server system databases, what they do, and how DBAs interact with them safely.
+
+## System Databases Explained (Security Director Example)
+
+Think of SQL Server as a secured building.
+
+- **master** → Head security office (controls the whole building)
+- **model** → Blueprint for new rooms
+- **msdb** → Control room (jobs, alerts, backups)
+- **tempdb** → Temporary work area
+- **ResourceDB** → Locked internal engine room
+
+## Databases and Use Cases
+
+### master
+- Stores instance configuration and logins
+- SQL Server cannot start without it
+- Must be backed up regularly
+
+### model
+- Template for new databases
+- Controls default settings for new DBs
+
+### msdb
+- Stores SQL Agent jobs
+- Backup and restore history
+- Alerts and maintenance plans
+
+### tempdb
+- Temporary objects and operations
+- Recreated on every SQL Server restart
+- Major performance impact
+
+### ResourceDB
+- Hidden and read-only
+- Stores system objects
+- Updated during patching
+
+## DBA Rule
+❌ Never store application data in system databases  
+✔ Understand them, protect them, and monitor them
